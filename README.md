@@ -1,6 +1,7 @@
 # Dockerfile
 Dockerfile to build brownie coin core image
-'''
+
+```
 for pkg in docker.io docker-doc docker-compose podman-docker containerd runc; do sudo apt-get remove $pkg; done
 
 # Add Docker's official GPG key:
@@ -26,4 +27,4 @@ docker run my_browniecoins_image &
 docker ps 
 
 docker exec -it 47839bf82139 /bin/bash
-'''
+```
