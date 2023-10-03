@@ -32,3 +32,20 @@ EXPOSE 8333
 
 # Start Bitcoin Core
 CMD ["/browniecoins/src/brownied", "-printtoconsole"]
+
+# Install OpenSSH server
+RUN apt-get update && apt-get install -y openssh-server
+
+# Create an SSH user
+RUN useradd -ms /bin/bash sshuser
+
+# Set a password for the SSH user (replace 'password' with your desired password)
+RUN echo 'sshuser:password' | chpasswd
+
+# Allow SSH access
+RUN mkdir /var/run/sshd
+
+# Expose SSH port
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd", "-D"]
