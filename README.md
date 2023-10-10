@@ -28,6 +28,9 @@ docker ps
 
 docker exec -it 47839bf82139 /bin/bash
 
+chmod +x rungento.sh
+
+./rungento.sh [wallet address]
 Build docker file 
 docker build -t browniecoin .
 
