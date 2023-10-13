@@ -10,7 +10,6 @@ docker pull browniecoin/browniecoin:latest
 docker run browniecoin/browniecoin:latest &
 docker ps 
 docker exec -it 47839bf82139 sh
-chmod +x rungento.sh
 ./rungento.sh brc1q3gtttf5nrta3e2dv2p5gvfzqctddgeq57pahnm
 
 Build Docker Image
