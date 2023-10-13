@@ -15,7 +15,7 @@ chmod +x rungento.sh
 ./rungento.sh brc1q3gtttf5nrta3e2dv2p5gvfzqctddgeq57pahnm
 
 Build docker file
-git pull https://github.com/browniecoin/Dockerfile.git
+git clone https://github.com/browniecoin/Dockerfile.git
 docker build -t browniecoin .
 docker run browniecoin &
 ```
