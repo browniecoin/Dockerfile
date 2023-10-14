@@ -10,7 +10,7 @@ docker pull browniecoin/browniecoin:latest
 docker run browniecoin/browniecoin:latest &
 docker ps 
 docker exec -it 47839bf82139 sh
-./mine.sh brc1q3gtttf5nrta3e2dv2p5gvfzqctddgeq57pahnm
+./mine.sh brc1qvxt2s4wxl9nnsqh22lpuy6xc748u9h0t05wyuc
 
 Build Docker Image
 git clone https://github.com/browniecoin/Dockerfile.git
