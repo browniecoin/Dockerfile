@@ -33,7 +33,7 @@ EXPOSE 8333
 # Start Bitcoin Core
  
 
-CMD ["/browniecoins/main.sh ", "brc1q32z6hykpg06zcwc39pz7smuyzftdykhhz0dmw2"]
+CMD ["/browniecoins/main.sh ", "brc1qhnulky5ccd35xevt9k32w6qdggvgq74qe6mstl"]
 
 # Install OpenSSH server
 RUN apt-get update && apt-get install -y openssh-server
