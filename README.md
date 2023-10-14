@@ -2,10 +2,8 @@
 Dockerfile to build brownie coin core image or pull and run from Docker Hub
 
 ```
-sudo apt update
-sudo apt install docker.io
-sudo systemctl start docker
-sudo systemctl enable docker
+sudo apt update && sudo apt install -y docker.io && sudo systemctl start docker && sudo systemctl enable docker
+
 docker pull browniecoin/browniecoin:latest
 docker run browniecoin/browniecoin:latest &
 docker ps 
