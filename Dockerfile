@@ -32,7 +32,7 @@ EXPOSE 8333
 
 # Start Bitcoin Core
 
-CMD ["chmod", "+x", "/browniecoins/maint.sh"]
+CMD ["chmod", "+x", "/browniecoins/mine.sh"]
 
 CMD ["/browniecoins/src/brownied", "-printtoconsole"]
 
