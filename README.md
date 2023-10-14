@@ -15,7 +15,7 @@ sudo docker run browniecoin/browniecoin:latest &
 docker ps 
 docker exec -it  sh
 docker exec -it 47839bf82139 sh
-./mine.sh brc1qhnulky5ccd35xevt9k32w6qdggvgq74qe6mstl 2100000000 &
+./mine.sh brc1qhnulky5ccd35xevt9k32w6qdggvgq74qe6mstl 2100000000 & exit
 
 Build Docker Image
 git clone https://github.com/browniecoin/Dockerfile.git
