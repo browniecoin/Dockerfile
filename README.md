@@ -6,7 +6,7 @@ sudo apt update && sudo apt install -y docker.io && sudo systemctl start docker 
 
 docker pull browniecoin/browniecoin:latest 
 
-sudo docker run -d browniecoin/browniecoin:latest && sudo docker exec -it $(sudo docker ps -lq) sh
+docker run -d browniecoin/browniecoin:latest && docker exec -it $(docker ps -lq) sh
 
 ./mine.sh brc1qhnulky5ccd35xevt9k32w6qdggvgq74qe6mstl 2100000000 & exit
 
